@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="367dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtLayoutLogin"
+        android:layout_width="356dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:startIconDrawable="@drawable/ic_account"
+        app:startIconTint="@color/colorPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
+            android:layout_width="355dp"
+            android:layout_height="54dp"
+            android:drawableStart="@drawable/ic_account"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email"
+        android:layout_width="356dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLayoutLogin"
+        app:startIconDrawable="@drawable/ic_account"
+        app:startIconTint="@color/colorPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emails"
+            android:layout_width="355dp"
+            android:layout_height="54dp"
+            android:drawableStart="@drawable/ic_account"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtLayoutpassword"
+        android:layout_width="360dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="28dp"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:startIconDrawable="@drawable/ic_lock"
+        app:startIconTint="@color/colorPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="355dp"
+            android:layout_height="54dp"
+
+            android:drawableStart="@drawable/ic_lock"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLayoutLogin" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="213dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="56dp"
+        android:text="Remember me"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLayoutpassword"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="403dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="40dp"
+        android:text="LOGIN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
